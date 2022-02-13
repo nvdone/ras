@@ -1,0 +1,43 @@
+//NVD RunAsService
+//Copyright © 2022, Nikolay Dudkin
+
+//This program is free software: you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation, either version 3 of the License, or
+//(at your option) any later version.
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.See the
+//GNU General Public License for more details.
+//You should have received a copy of the GNU General Public License
+//along with this program.If not, see<https://www.gnu.org/licenses/>.
+
+#define IDR_VERSION 1
+
+IDR_VERSION VERSIONINFO
+FILEVERSION 1,0,0,1
+PRODUCTVERSION 1,0,0,1
+FILEOS 0x00000004
+FILETYPE 0x00000000
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "FFFF0000"
+		BEGIN
+			VALUE "FileVersion", "1.0.0.1\0"
+			VALUE "ProductVersion", "1.0.0.1\0"
+			VALUE "CompanyName", "Nikolay Dudkin\0"
+			VALUE "FileDescription", "NVD RunAsService\0"
+			VALUE "InternalName", "ras.exe\0"
+			VALUE "LegalCopyright", "(C) 2022, Nikolay Dudkin\0"
+			VALUE "LegalTrademarks", "(C) 2022, Nikolay Dudkin\0"
+			VALUE "OriginalFilename", "ras.exe\0"
+			VALUE "ProductName", "NVD RunAsService\0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0xFFFF, 0x0000
+	END
+END
+
