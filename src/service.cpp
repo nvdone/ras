@@ -244,7 +244,7 @@ int ServiceInstall(DWORD dwStartType, wchar_t *account, wchar_t * password, wcha
 	if (!GetModuleFileName(NULL, myExePath, MAX_PATH))
 		return 16;
 
-	swprintf(serviceBinPath, MAX_PATH - 1, L"%s -servicename:%s -run -path:\"%s\" -loop:%d -delay:%d%s%s%s", myExePath, serviceName, payloadPath, loopMinutes, delayMinutes, directory ? L" -setdirectory:\"" : L"", directory ? directory : L"", directory ? L"\"" : L"");
+	swprintf(serviceBinPath, MAX_PATH - 1, L"\"%s\" -servicename:%s -run -path:\"%s\" -loop:%d -delay:%d%s%s%s", myExePath, serviceName, payloadPath, loopMinutes, delayMinutes, directory ? L" -setdirectory:\"" : L"", directory ? directory : L"", directory ? L"\"" : L"");
 
 	scManager = OpenSCManager(NULL, NULL, GENERIC_ALL);
 	if (!scManager)
